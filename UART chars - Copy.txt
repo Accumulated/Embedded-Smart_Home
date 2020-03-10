@@ -1,0 +1,39 @@
+'-'	-> starting page is here
+
+Registration:
+
+'g'
+!	-> the name you supplied is used in the system try another name
+@	-> name is valid and saved in the system
+#	-> password is inserted in the memory for this user
+~	-> send this char when you are ready for getting username 
+
+LOGIN:
+
+'c'	-> go to login
+^	-> username is valid and in the memory 
+(	-> passwrod is valid and access 6:15 AM 2/11/2020granted to the control page
+/	-> password is invalid and loop terminatd
+/	-> username is invalid and loop terminated
+)	-> try again for password
+%	-> send this char when you are ready for getting username
+
+CONTROL:
+
+Recieve:				Send:
+'j'	-> open door		*> 	|
+'r'	-> close door		*>	;
+'k'	-> turn lights on	*> 	:
+'p'	-> turn lights off	*> 	?
+
+
+" 		-> NO USERS TO DELETE FROM ADMIN POINT OF VIEW IN CODE
+$		-> before any string sent to uart/bluetooth
+=		-> admin access granted
+&		-> confirm data sent by UART_SendString()
+
+<		-> INDICATION BEFORE ANY STRING FOR ITS LOCATION IN MEMORY
+
+
+
+
